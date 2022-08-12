@@ -8,7 +8,7 @@
 .main-section {
     height:850px;
     width:1915px;
-    background-image: url("assets/buffet-pic.jpg");
+    background-image: url("static/css/assets/buffet-pic.jpg");
     background-size: 1915px;
     background-repeat: no-repeat;
 }

@@ -1,8 +1,8 @@
-import AboutUs from "./views/AboutUs";
-import Home from "./views/Home";
-import OrderNow from "./views/OrderNow";
-import Menu from "./views/Menu";
-import Locations from "./views/Locations";
+import AboutUs from "./views/AboutUs.js";
+import Home from "./views/Home.js";
+import OrderNow from "./views/OrderNow.js";
+import Menu from "./views/Menu.js";
+import Locations from "./views/Locations.js";
 
 const navigateTo = url => {
     history.pushState(null, null, url);
@@ -12,17 +12,17 @@ const navigateTo = url => {
 const router = async () => {
     const routes = [
         {path:"/", view:  Home},
-        {path:"/aboutus", view: AboutUs },
+        {path:"/aboutus", AboutUs},
         {path:"/menu", view: Menu},
         {path:"/locations", view: Locations},
         {path:"/ordernow", view: OrderNow},
     ];
 
     // Test routes
-    const potentialMatches = routes.map(route =>{
+    const potentialMatches = routes.map(route => {
         return {
             route: route,
-            isMatch: location.pathName === route.path
+            isMatch: location.pathname === route.path
         };
     });
 
@@ -44,7 +44,7 @@ const router = async () => {
 window.addEventListener("popstate",router);
 
 document.addEventListener("DOMContentLoaded", () => { // once DOM is loaded
-    document.body.addEventListener("click", e => {
+    document.body.addEventListener("click", e => { // click event
         if(e.target.matches("[data-link]")) {
             e.preventDefault();
             navigateTo(e.target.href);
@@ -52,3 +52,4 @@ document.addEventListener("DOMContentLoaded", () => { // once DOM is loaded
     })
     router();
 });
+
