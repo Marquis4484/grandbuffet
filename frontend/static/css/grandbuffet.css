@@ -2,27 +2,35 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Fira Sans', sans-serif;
+    font-family: Palatino, 'Palatino Linotype', serif;
 }
 
 .main-section {
     height:850px;
-    width:1915px;
-    background-image: url("static/css/assets/buffet-pic.jpg");
+    width:100%;
+    background-image: url("./assets/buffet-pic.jpg");
     background-size: 1915px;
     background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.5); /* Tint color */
+    background-blend-mode: multiply;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav {
     background-color: #AF753B;
+    width: 100%;
 }
-
+.tabs{
+    color: #FCD904;
+}
 .grandbuffet{
     width: 260px;
     height: 90px;
     padding: 10px;
-
 }
+
 header {
     background-color: #FFF;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
@@ -36,14 +44,9 @@ header nav {
     padding-right: 100px;
 }
 
-header nav h1 {
-    font-size: 28px;
-    font-weight: 600;
-}
 
 header nav .tabs {
     list-style-type: none;
-
     display: flex;
     justify-content: flex-end;
 }
@@ -94,30 +97,423 @@ main {
 
 footer{
     height:200px;
-    width:1915px;
+    width:100%;
     background-color: #AF753B;
 }
 
 .footer-content{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.rights{
+    font-size: 35px;
+    padding: 30px;
 }
 
 
 .social-media{
     display: flex;
     justify-content: center;
-    
 }
 
 .twitter{
-    width:20px;
+    width:50px;
+    margin: 4px;
 }
 
 .youtube{
-    width:20px;
+    width:50px;
+    margin: 4px;
 }
 
 .instagram{
-    width:20px;
+    width:50px;
+    margin: 4px;
+}
+
+
+.toggle-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-title{
+    font-size: 38px;
+    color:rgb(245, 245, 245);
+}
+
+.home-title-2{
+    font-size: 80px;
+    padding: 100px 0px;
+    color:rgb(245, 245, 245);
+}
+
+.home-title-2 a{
+    color: #FCD904;
+    text-decoration: none;
+}
+
+.home-title-3 a{
+    color: #F1592A;
+    text-decoration: none;
+}
+
+.home-title-3{
+    font-size: 38px;
+    color:rgb(245, 245, 245);
+}
+
+.ordernow{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.aboutus{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.aboutus-title{
+    font-size: 80px;
+    color:rgb(245, 245, 245);
+}
+
+.principles{
+    display:flex;
+    color:rgb(245, 245, 245);
+    padding: 100px 0px;
+}
+
+p{
+    font-size: 30px;
+    padding: 20px;
+}
+
+.aboutus-title-2{
+    font-size: 38px;
+    color:rgb(245, 245, 245);
+}
+
+.menu{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+}
+
+.menu-header{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    padding: 0px 0px 80px 0px;
+}
+
+.menu-items{
+    display:flex;
+    flex-direction: row;
+}
+
+.food{
+    padding: 0px 90px 0px 0px;
+}
+
+.drinks{
+    padding: 20px 0px 0px 10px;
+}
+
+.burger{
+    width:160px;
+}
+
+.frenchfries{
+    width:200px;
+}
+
+.fruitbasket{
+    width:200px;
+}
+
+.pizza{
+    width:160px;
+}
+
+.coffee{
+    width:160px;
+}
+
+.cola{
+    width:120px;
+}
+
+.lemonjuice{
+    width:160px;
+}
+
+.orangejuice{
+    width:140px;
+}
+
+.menu-title{
+    font-size: 80px;
+    color:rgb(245, 245, 245);
+}
+
+.menu-title-2{
+    font-size: 38px;
+    color:rgb(245, 245, 245);
+}
+
+.location{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+}
+
+.locations{
+    display: flex;
+    flex-direction: row;
+}
+
+.location-title-1{
+    font-size: 80px;
+    color:rgb(245, 245, 245);
+    padding: 0px 0px 80px 0px;
+}
+
+.location-title-2{
+    font-size: 38px;
+    color:rgb(245, 245, 245);
+}
+
+.elewood{
+    width:200px;
+}
+
+.lindis{
+    width:200px;
+}
+
+.location-container-2{
+    padding: 0px 100px 0px 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.location-container-1{
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.location-container-3{
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hector{
+    width:130px;
+}
+
+.ordernow-title{
+    font-size: 80px;
+    color:rgb(245, 245, 245);
+}
+
+.ordernow-title-2{
+    font-size: 38px;
+    padding: 100px 0px;
+    color:rgb(245, 245, 245);
+}
+
+.ordernow-title-3{
+    font-size: 38px;
+    color:rgb(245, 245, 245);
+}
+
+@media (max-width: 1350px) {
+
+   header nav .tabs .tab a[data-link]{
+        font-size: 23px;
+    }
+    .order-now a[data-link] {
+      
+        font-size: 23px;
+        
+    }
+}
+
+@media (max-width: 1200px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: none;
+    }
+
+    .order-now a[data-link] {
+        align-items:center;      
+        margin-bottom: 30px;
+    }
+}
+
+
+@media (max-width: 950px) {
+    header nav .tabs .tab a[data-link]{
+        display: none;
+        margin-bottom: 20px;
+    }
+
+    header nav .tabs {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        align-items:center;
+       
+    }
+
+    header nav .tabs .tab a[data-link]{
+        text-align: center;
+        
+    }
+
+    header nav .tabs.active .tab a[data-link]{
+        display: flex;
+    }
+
+    .order-now a[data-link] {
+        display: none;
+        align-items:center;
+        margin-right: 30px;
+        margin-bottom: 30px;
+    }
+
+    header nav .tabs.active .order-now a[data-link]{
+        display: flex;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .home-title{
+        font-size:30px;
+    }
+    .home-title-2{
+        font-size:60px;
+    }
+    .home-title-3{
+        font-size:30px;
+    }
+
+    .rights{
+        font-size:20px;
+    }
+
+    .aboutus-title{
+        font-size:35px;
+    }
+
+    .principles{
+        flex-direction: column;
+    }
+    
+    p{
+    font-size: 25px;
+    } 
+
+    .aboutus-title-2{
+        font-size: 20px;
+        
+    }
+
+    .menu-title{
+        font-size:40px;
+    }
+
+    .menu-title-2{
+        font-size:25px;
+    }
+
+    .burger{
+        width:80px;
+    }
+    
+    .frenchfries{
+        width:80px;
+    }
+    
+    .fruitbasket{
+        width:80px;
+    }
+    
+    .pizza{
+        width:80px;
+    }
+    
+    .coffee{
+        width:80px;
+    }
+    
+    .cola{
+        width:80px;
+    }
+    
+    .lemonjuice{
+        width:80px;
+    }
+    
+    .orangejuice{
+        width:80px;
+    }
+    .location-title-1{
+        font-size:40px;
+    }
+    .location-title-2{
+        font-size: 30px;
+    }
+    .locations{
+        flex-direction:column;
+    }
+    .elewood{
+        width: 100px;
+    }
+    .lindis{
+        width: 100px;
+    }
+    .hector{
+        width: 100px;
+    }
+    .ordernow-title{
+        font-size: 50px;
+    }
+
 }
