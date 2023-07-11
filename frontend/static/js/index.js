@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => { // once DOM is loaded
     router();
 });
 
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const toggleButton = document.getElementsByClassName('toggle-button')[0] // Hamburger button
 const tabs = document.getElementsByClassName('tabs')[0]
 
 toggleButton.addEventListener('click', () => {
