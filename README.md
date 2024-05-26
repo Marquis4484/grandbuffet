@@ -3,13 +3,12 @@
 <img src='frontend/static/css/assets/GrandBuffet-ReadMe.png'>
 
 ## Description
-
 This is a mock restaurant website based on many modern websites that exist on the internet today.
-I created the design of the website's logo in Adobe Illustrator and designed the layout of the website in Adobe XD.
-It runs as a single page application without any JavaScript frameworks such as React.js or Vue.js.
-This website also functions as a native web application due to Node.js and Express handling all of the client side routing.
-All of the views that are contained in the frontend folder displays content using class based functions.
-Content within those files are distributed throughout VS code using JavaScript modules.
+I created the design of the website's logo in Adobe Illustrator and designed the layout in Adobe XD.
+It runs as a single-page application without any JavaScript frameworks such as React.js or Vue.js.
+This website also functions as a native web application due to Node.js and Express handling all of the client-side routing.
+All of the views that are contained in the frontend folder display content using class-based functions.
+Content within those files is distributed throughout VS code using JavaScript modules. 
 
 ## Conclusion
 
