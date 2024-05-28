@@ -11,11 +11,9 @@ All of the views that are contained in the frontend folder display content using
 Content within those files is distributed throughout VS code using JavaScript modules. 
 
 ## Conclusion
-
-It was a challenge to learn how to re-use Adobe XD but, I was able to create a draft that I was satisfied with to use for the base of this project.
-I was also able to learn how to make my website dynamic without the use of a JavaScript framework.
+In the beginning, it was challenging to learn how to reuse Adobe XD. However, I was still able to create a draft that I was satisfied with. 
 Before this, I had not used JavaScript modules in my website projects.
-Now, I'm thinking of how can I apply what I've learned about JavaScript modules to other projects in the future.
+Next, I would like to learn how I can apply what I've learned about JavaScript modules to other projects in the future.
 Overall, this was a great experience and I'd love to make something similar in the future.
 
 <img src='frontend/static/css/assets/GrandBuffet(AdobeXD).png'>
